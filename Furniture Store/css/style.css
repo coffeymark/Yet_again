@@ -1,0 +1,254 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Grid CSS */
+@media only screen and (max-width: 1000px){
+#navigation{
+  display: none;
+}
+
+.icons{
+margin-left: auto;
+}
+}
+@media only screen and (max-width: 600px){
+#headline{
+position:static;
+margin: 20px;
+}
+
+
+}
+
+
+#heroGrid {
+grid-template-areas:
+"featuredProduct featuredProduct"
+"secondaryProduct CTA";
+}
+
+#heroGrid {
+/* Category Grid CSS */
+margin: 0px 5%;
+display: grid;
+min-height: 500px;
+height: 70vh;
+grid-template-columns:75% 25%;
+grid-template-rows:75% 25%;
+grid-template-areas: 
+"featuredProduct secondaryProduct"
+"featuredProduct CTA";
+}
+
+#featuredProduct{
+  grid-area: featuredProduct;
+  grid-row-start:featuredProduct;
+  grid-column-start:featuredProduct;
+  grid-row-end:featuredProduct;
+  grid-column-end:featuredProduct;
+  background-image: url("../images/furniture1.png");
+}
+
+#secondaryProduct{
+  grid-area: secondaryProduct;
+  grid-row-start:secondaryProduct;
+  grid-column-start:secondaryProduct;
+  grid-row-end:secondaryProduct;
+  grid-column-end:secondaryProduct;
+  background-image: url("../images/furniture2.png");
+}
+
+#CTA{
+  grid-area: CTA;
+  grid-row-start:CTA;
+  grid-column-start:CTA;
+  grid-row-end:CTA;
+  grid-column-end:CTA;
+  background-image: url("../images/woodbg.png");
+  justify-content: space-around;
+  cursor: pointer;
+  
+}
+
+
+.heroGrid{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#headline{
+  border-bottom: 5px solid #FF6200;
+  background-color:rgba(255,255,255,0.8);
+  position: absolute;
+  top: 250px;
+  right:350px;
+  z-index:100;
+  padding: 25px;
+  max-width: 550px;
+}
+
+.subHeading{
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid{
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "bookcases bedroom patio"
+  "couches couches patio"
+  "desks desks desks";
+}
+
+
+#bookcases {
+  grid-area: bookcases;
+  grid-row-start:bookcases;
+  grid-column-start:bookcases;
+  grid-row-end:bookcases;
+  grid-column-end:bookcases;
+  background-image: url("../images/bookcases@2x.png");
+
+}
+#bedroom {
+  grid-area: bedroom;
+  grid-row-start:bedroom;
+  grid-column-start:bedroom;
+  grid-row-end:bedroom;
+  grid-column-end:bedroom;
+  background-image: url("../images/beds@2x.png");
+}
+
+#couches {
+  grid-area: couches;
+  grid-row-start:couches;
+  grid-column-start:couches;
+  grid-row-end:couches;
+  grid-column-end:couches;
+  background-image: url("../images/couch@2x.png");
+}
+
+#patio {
+  grid-area: patio;
+  grid-row-start:patio;
+  grid-column-start:patio;
+  grid-row-end:patio;
+  grid-column-end:patio;
+  background-image: url("../images/patio@2x.png");
+}
+
+#desks {
+  grid-area: desks;
+  grid-row-start:desks;
+  grid-column-start:desks;
+  grid-row-end:desks;
+  grid-column-end:desks;
+  background-image: url("../images/desks@2x.png");
+}
+
+
+.categoryGridArea{
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+}
+
+#categoryGridArea{
+ background-color:rgba(0,0,0,0.7);
+ Padding:15px;
+ height: 25px;
+ color: white;
+ font-size: 18px;
+ border-bottom: 5px solid #FF6200;
+
+}
+
+.heading{
+  background-color:rgba(0,0,0,0.7);
+  Padding:15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+ }
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+.highlight {
+  color: #FF6200;
+  font-weight: 700;
+}
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+  
+}
+
